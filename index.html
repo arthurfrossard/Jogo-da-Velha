@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Jogo da velha!</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Jogo da Velha!</h1>
+  <ul>
+    <h2>Regras do jogo:</h2>
+    <li>O jogador não deve clicar em uma casa já marcada pelo adversário;</li>
+    <li>O jogador que conseguir sequenciar seu smbolo primeiro vence;</li>
+    <li>Caso nenhum dos jogadores consiga ganhar o jogo dará Velha(empate);</li>
+    <li>Boa sorte!</li>
+  </ul>
+  <span id="sJogadorDaVez"></span>
+  <p id="result"></p>
+  <p id="repet"></p>
+  <table>
+    <tr class="casaLinha">
+      <td id="casa1" class="casa" onclick="marcar(event, 1)"></td>
+      <td id="casa2" class="casa" onclick="marcar(event, 2)"></td>
+      <td id="casa3" class="casa" onclick="marcar(event, 3)"></td>
+    </tr>
+    <tr class="casaLinha">
+      <td id="casa4" class="casa" onclick="marcar(event, 4)"></td>
+      <td id="casa5" class="casa" onclick="marcar(event, 5)"></td>
+      <td id="casa6" class="casa" onclick="marcar(event, 6)"></td>
+    </tr>
+    <tr class="casaLinha">
+      <td id="casa7" class="casa" onclick="marcar(event, 7)"></td>
+      <td id="casa8" class="casa" onclick="marcar(event, 8)"></td>
+      <td id="casa9" class="casa" onclick="marcar(event, 9)"></td>
+    </tr>
+  </table>
+  <script src="script.js"></script>
+</body>
+
+</html>
